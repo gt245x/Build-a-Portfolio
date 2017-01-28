@@ -1,0 +1,6 @@
+/* This centers the "Featured work" title for devices lower than 990px. */
+@media screen and (max-width: 990px) {
+    .text-responsive {
+        text-align: center;
+    }
+}

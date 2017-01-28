@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Build a Portfolio Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Use of bootstrap for the body section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-responsive title-logo" src="images/logo.png" alt ="Udacity logo">
+            </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="title-super text-thin">Jane Doette</h1>
+                <h4 class="sub-title">Front-end Ninja</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+                <hr/>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <!-- Use of srcset and source to responsively select image based on width and device type -->
+            <figure>
+                <picture id="box1">
+                    <source class="img-responsive" media="(min-width: 750px)" srcset="images/glass_view-1600_large_2x.jpeg 2x, images/glass_view-800_large_1x.jpeg" />
+                    <source class="img-responsive" media="(min-width:500px)" srcset="images/glass_view_medium.jpeg" />
+                    <img class="img-responsive" src="images/glass_view_small.jpeg." alt="Glassview image">
+                </picture>
+            </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-greyed text-responsive">Featured Work</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <figure>
+                    <picture>
+                        <source class="img-responsive" media="(min-width: 750px)" srcset="images/stairways-1600_large_2x.jpeg 2x, images/stairways-800_large_1x.jpeg" />
+                        <source class="img-responsive" media="(min-width:500px)" srcset="images/stairways_medium.jpeg" />
+                        <img class="img-responsive" src="images/stairways_small.jpeg" alt="Stairways" data-toggle="modal" data-target="#project1">
+                    </picture>
+                </figure>
+                <h3 class="text-uppercase topic-weight">Python</h3>
+                <a href="https://www.udacity.com/course/programming-foundations-with-python--ud036">programming with python</a>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <picture>
+                        <source class="img-responsive" media="(min-width: 750px)" srcset="images/bear-1600_large_2x.jpeg 2x, images/bear-800_large_1x.jpeg" />
+                        <source class="img-responsive" media="(min-width:500px)" srcset="images/bear_medium.jpeg" />
+                        <img class="img-responsive" src="images/bear_small.jpeg" alt="Bear hugging a Tree" data-toggle="modal" data-target="#project2">
+                    </picture>
+                </figure>
+                <h3 class="text-uppercase topic-weight">Databases</h3>
+                <a href="https://www.udacity.com/course/intro-to-relational-databases--ud197">SQL, DB-API, and More</a>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <picture>
+                        <source class="img-responsive" media="(min-width: 750px)" srcset="images/river-1600_large_2x.jpeg 2x, images/river-800_large_1x.jpeg" />
+                        <source class="img-responsive" media="(min-width:500px)" srcset="images/river_medium.jpeg" />
+                        <img class="img-responsive" src="images/river_small.jpeg" alt="Picture of flowing river" data-toggle="modal" data-target="#project3">
+                    </picture>
+                </figure>
+                <h3 class="text-uppercase topic-weight">Linux Server</h3>
+                <a href="https://www.udacity.com/course/linux-command-line-basics--ud595">linux command line basics</a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for the first topic-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-uppercase text-center" id="myModalLabel1">Python</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="images/stairways_small.jpeg" alt="Stairways">
+                    <p class="text-desc">Programming Foundations with Python is the first computer programming course that will be studied in the full Stack Web Developer Nanodegree. Learning python is like climbing an uphill stairs.  The course will discuss the use of functions and classes in learning object oriented programming. Some of the projects in this course include: </p>
+                    <!-- Applicaion of unordered list-->
+                    <ul>
+                        <li>Project take a break</li>
+                        <li>Project profanity editor</li>
+                        <li>Project movie database</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for the second topic-->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-uppercase text-center" id="myModalLabel2">Relational database</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="images/bear_small.jpeg" alt="Bear hugging a Tree">
+                    <p class="text-desc">Relational databases are powerful tools used throughout the industry and one of the backend developers most powerful tool. The course introduces the basics of SQL and how to connect a python code to a relational database. By the end of the course, the student should be able to organize and store application data in a relational database. The final project is building a database backed software to run a particular kind of game or tournament.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for the third topic-->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-uppercase text-center" id="myModalLabel3">Linux Server</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="images/river_small.jpeg" alt="Picture of flowing river">
+                    <p class="text-desc">Linux is a Unix-like operating system assembled under the model of free and open-source software development and distribution. The course involves using a virtual machine to host apps and install updates via a baseline installation of a Linux distribution. The course also introduces working within a shell and running a vagrant virtual machine. The final project tests the students on preparing linux virtual machine to install updates, securing it from a number of attack vectors and configuring web and database servers.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

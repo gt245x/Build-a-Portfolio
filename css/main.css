@@ -1,0 +1,83 @@
+/*
+ *
+ * Main body
+ *
+ */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
+.text-greyed {
+    color: #7d97ad;
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.sub-title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.topic-weight {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.text-desc {
+    font-size: 16px;
+}
+
+hr {
+    height: 4px;
+    background-color:#7d97ad;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+picture#box1 img{
+    min-width: 100%;
+    max-height: 400px;
+}
+
+
+/*
+ *
+ * Attribute and list
+ *
+ */
+
+
+li {
+    font-size: 16px;
+}
+
+a {
+    color: blue;
+    font-size: 16px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
