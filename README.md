@@ -4,7 +4,8 @@
 
 ##Installation
 
-    - The index.html file can be run on a server using localhost or by opening it in a browser.
+    - cd to the directory 
+    - The index.html file can be run on a server using localhost or by directly opening it in a browser.
 
 
 ## FEATURES
